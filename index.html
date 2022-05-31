@@ -1,52 +1,103 @@
 <!DOCTYPE html>
+<html lang="fr">
 <html>
 <head>
-    <meta charset="UFT-8">
-    <title>Site professionel de Ayoub Moudrika</title>
+    <meta charset="UTF-8">
+    <title>Portfolio de Ayoub Moudrika</title>
+
+    <!-- linking css file -->
     <link rel="stylesheet" type="text/css" href='style.css' />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="w3-bar w3-black">
-    <button class="w3-bar-item w3-button" onclick="openTab('contact')">Contact</button>
-    <button class="w3-bar-item w3-button" onclick="openTab('stages')">Stages</button>
-    <button class="w3-bar-item w3-button" onclick="openTab('formation')">Formation</button>
-    <button class="w3-bar-item w3-button" onclick="openTab('stack')">Stack Technologique</button>
-    <button class="w3-bar-item w3-button" onclick="openTab('cv')">Telecharger CV en PDF</button>
-    <button><</button>
-</div>
 
-<div id="contact" class="tab">
-    <h2>Ayoub Moudrika</h2>
-    <p>514-998-8996</p>
-    <p>amoudrika@gmail.com</p>
-</div>
+<nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+    <div class="container">
+        <a class="navbar-brand" href="#name">Ayoub Moudrika</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Page principale</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">À propos de moi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Expérience & Stages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Formation universitaire</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Stack Technologique</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
 
-<div id="stages" class="tab" style="display:none">
-    <p>Gestabec (Jean Fortin Syndics de faillite)</p>
-    <p>Intact Assurances</p>
-    <p>Air Transat</p>
-</div>
+        </div>
+    </div>
+</nav>
 
-<div id="formation" class="tab" style="display:none">
-    <a href="https://www.etsmtl.ca/etudes/premier-cycle/baccalaureat-genie-des-ti">
-        BACCALAUREAT EN GENIE DES TECHNOLOGIES DE L'INFORMATION</a>
-    <p>Moyenne cumulative: 2.95/4.3</p>
-    <p>Credits: 74/116</p>
-</div>
+<!-- main banner -->
+<section class="bgimage" id="home">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero_title">Bonjour, je suis Ayoub</h2>
+                <p class="hero_desc">je suis développeur logiciel junior dans la région de Montréal</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-<div id="stack" class="tab" style="display:none">
-    <p>Backend: Java</p>
-    <p>Frontend: Javascript, Typescript</p>
-</div>
+<!-- about section-->
+<section id="about">
+    <div class="container mt-4 pt-4">
+        <h1 class="text-center">À propos de moi</h1>
+        <div class="row mt-4">
+            <div class="col-lg-4">
+                <img src="images/ayoub.jpg" class= "imageAboutPage" alt="">
+            </div>
 
+            <div class="col-lg-8">
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Name: Ayoub Moudrika</li>
+                            <li>Occupation:  développeur logiciel junior</li>
 
-<div id="cv" class="tab" style="display:none">
-    <a href="cv.pdf" download>
-        <img src="/images/cvLogo.jpq" alt="Ayoub Moudrika CV" width="104" height="142">
-    </a>
-</div>
-</body>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <script src="site.js"></script>
+
+<!-- footer section-->
+<footer id="footer">
+    <div class="container-fluid">
+        <!-- social media icons -->
+        <div class="social-icons mt-4">
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.github.com" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</footer>
 </html>
