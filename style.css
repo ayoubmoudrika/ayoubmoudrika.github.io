@@ -9,21 +9,21 @@
 
 .bgimage2 {
     height:100vh;
-    background: url('images/portfolioImage3.jpg');
+    background: url('images/miami.jpg');
     background-size:cover;
     position:relative;
 }
 
 .bgimage3 {
     height:100vh;
-    background: url('images/future.webp');
+    background: url('images/miami.jpg');
     background-size:cover;
     position:relative;
 }
 
 .bgimage4 {
     height:100vh;
-    background: url('images/future.webp');
+    background: url('images/miami.jpg');
     background-size:cover;
     position:relative;
 }
