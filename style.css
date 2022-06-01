@@ -2,16 +2,44 @@
 /* hero background image */
 .bgimage {
     height:100vh;
-    background: url('images/miami.JPG');
+    background: url('images/miami.jpg');
     background-size:cover;
     position:relative;
+}
+
+.bgimage2 {
+    height:100vh;
+    background: url('images/portfolioImage3.jpg');
+    background-size:cover;
+    position:relative;
+}
+
+.bgimage3 {
+    height:100vh;
+    background: url('images/future.webp');
+    background-size:cover;
+    position:relative;
+}
+
+.bgimage4 {
+    height:100vh;
+    background: url('images/future.webp');
+    background-size:cover;
+    position:relative;
+}
+
+
+#stackHeader {
+    color:white;
 }
 /* text css above hero image*/
 .hero_title {
     font-size: 4.5rem;
+    color: white;
 }
 .hero_desc {
     font-size: 2rem;
+    color:white;
 }
 .hero-text {
     text-align: center;
@@ -37,6 +65,31 @@
 }
 .fab {
     color: #000000;
+}
+
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+}
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: black;
 }
 /* footer styling */
 #footer {
